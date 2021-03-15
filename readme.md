@@ -1,10 +1,10 @@
-#
-### 使用依赖
+# 使用
+### 添加依赖
 ```
 <dependency>
     <groupId>com.github.gitveio</groupId>
     <artifactId>gmssl-dev</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 </dependency>
 ```
 
@@ -26,22 +26,22 @@ for (int i = 0; i < s3.length; i++) {
 ```
 
 # windows编译
-1 替换names2.c为老版本文件
-2 安装vs、activeperl、nasm
-3 打开visual studio 2015 -> x64 x86 cross ..
-4 切换至gmssl根目录，执行
+1 替换names2.c为老版本文件  
+2 安装vs、activeperl、nasm  
+3 打开visual studio 2015 -> x64 x86 cross ..  
+4 切换至gmssl根目录，执行  
 ```
 >> perl Configure VC-WIN64A no-asm
 >> nmake
 ```
-6 切换至java目录，执行
+5 切换至java目录，执行  
 ```
 >> nmake -f winmake
 ```
 
 # linux编译
-1 编辑Configure，添加"java"
-$config{dirs} = [ "crypto", "ssl", "engines", "apps", "util", "tools", "fuzz", "test", "java" ];
-2 删除报错的--verion..map段
-3 ./config
-4 make
+1 编辑Configure，添加"java"  
+$config{dirs} = [ "crypto", "ssl", "engines", "apps", "util", "tools", "fuzz", "test", "java" ];  
+2 删除报错的--verion..map段  
+3 ./config  
+4 make  
