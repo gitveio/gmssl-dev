@@ -15,14 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Configure GPG Key
-      run: |
-        mkdir -p ~/.gnupg/
-        printf "$GPG_SIGNING_KEY" | base64 --decode > ~/.gnupg/private.key
-        echo "$GPG_SIGNING_PW" | gpg --batch --import --yes --passphrase-fd 0  ~/.gnupg/private.key
-      env:
-        GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
-        GPG_SIGNING_PW: ${{ secrets.GPG_SIGNING_PW }}
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
