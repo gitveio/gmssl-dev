@@ -1,5 +1,5 @@
-#
-### 使用依赖
+# 使用
+### 添加依赖
 ```
 <dependency>
     <groupId>com.github.gitveio</groupId>
