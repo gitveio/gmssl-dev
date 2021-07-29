@@ -1,4 +1,4 @@
-package com.github.gitveio;
+package org.gmssl;
 
 import java.io.*;
 import java.lang.reflect.Field;

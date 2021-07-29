@@ -7,8 +7,8 @@
     <groupId>com.github.gitveio</groupId>
     <artifactId>gmssl-dev</artifactId>
     <version>1.0</version>
-
     <name>gmssl-dev</name>
+
     <url>https://github.com/gitveio/gmssl-dev</url>
     <description>java wrapper of gmssl.</description>
 
@@ -21,12 +21,11 @@
     </licenses>
 
     <scm>
-        <url>http://mydlq.club</url>
+        <url>https://github.com/gitveio</url>
         <connection>scm:git:https://github.com/gitveio/gmssl-dev.git</connection>
         <developerConnection>scm:git:https://github.com/gitveio/gmssl-dev.git</developerConnection>
     </scm>
 
-    <!--发布者信息-->
     <developers>
         <developer>
             <name>gitveio</name>
