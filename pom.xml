@@ -6,7 +6,7 @@
 
     <groupId>com.github.gitveio</groupId>
     <artifactId>gmssl-dev</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>gmssl-dev</name>
 
     <url>https://github.com/gitveio/gmssl-dev</url>
